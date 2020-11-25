@@ -1,16 +1,38 @@
-import React from "react"
+import React from "react";
 
-const Card = props =>{
-    return(
+function Card(props) {
+  return (
+    <table>
+      <thead>
         <tr>
-            <th scope="col">{props.index +1}</th>
-            <th scope="col">{props.User.Name.First}</th>
-            <th scope="col">{props.User.Name.Last}</th>
-            <th scope="col">{props.User.Email}</th>
-            <th scope="col">{props.User.Gender}</th>
-            <th scope="col">{props.User.Cell}</th>
+          <th></th>
+          <th onClick={() => props.employeeArray()}>Name</th>
+          <th>Email: </th>
+          <th>Cell: </th>
+          <th>Location: </th>
         </tr>
-    )
+      </thead>
+      <tbody className="list-group">
+        {props.employees.map(
+          ({ name, cell, email, login, picture, location }) => {
+            if (name.last.includes(props.search)) {
+              return (
+                <tr className="list-group-item" key={login.uuid}>
+                  <td>
+                  <img src={picture.medium} alt="" />
+                  </td>
+                  <td>{name.last}, {name.first}</td>
+                  <td>{email}</td>
+                  <td>{cell}</td>
+                  <td>{location.city}, {location.state}</td>
+                </tr>
+              );
+            }
+          }
+        )}
+      </tbody>
+    </table>
+  );
 }
 
-export default Card
+export default Card;
