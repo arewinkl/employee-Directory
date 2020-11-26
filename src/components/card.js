@@ -1,38 +1,18 @@
 import React from "react";
 
-function Card(props) {
-  return (
-    <table>
-      <thead>
-        <tr>
-          <th></th>
-          <th onClick={() => props.employeeArray()}>Name</th>
-          <th>Email: </th>
-          <th>Cell: </th>
-          <th>Location: </th>
-        </tr>
-      </thead>
-      <tbody className="list-group">
-        {props.employees.map(
-          ({ name, cell, email, login, picture, location }) => {
-            if (name.last.includes(props.search)) {
-              return (
-                <tr className="list-group-item" key={login.uuid}>
-                  <td>
-                  <img src={picture.medium} alt="" />
-                  </td>
-                  <td>{name.last}, {name.first}</td>
-                  <td>{email}</td>
-                  <td>{cell}</td>
-                  <td>{location.city}, {location.state}</td>
-                </tr>
-              );
-            }
-          }
-        )}
-      </tbody>
-    </table>
-  );
+const Employee = props =>{
+    return(
+    <tr>
+    <th scope="col">{props.index +1}</th>  
+    <th scope="col">{props.User.name.first}</th>
+    <th scope="col">{props.User.name.last}</th>
+    <th scope="col">{props.User.email}</th> 
+    <th scope="col">{props.User.dob.age}</th> 
+    <th scope="col">{props.User.cell}</th>
+    
+    </tr>
+    
+    )
 }
 
-export default Card;
+export default Employee

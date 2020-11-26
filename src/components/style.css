@@ -1,0 +1,15 @@
+table {
+    background-color: cadetblue;
+}
+.title {
+    background-color: #A44545;
+    text-align: center;
+    border: 40px solid #A44545;
+    font-size: 140px;
+    text-shadow: 4px 8px 8px #4e4646;
+    
+}
+
+.rows {
+    background-color:#A3A3A3;
+}
