@@ -76,6 +76,7 @@ SortChange = ()=> {
               {/* for any desired column add infor here and match in acompaning js */}
               <th className="rows" scope="col">AGE</th>
               <th className="rows" scope="col">CELL PHONE</th>
+              <th className="rows" scope="col">GENDER</th>
               
             </tr>
           </thead>

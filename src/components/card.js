@@ -9,6 +9,7 @@ const Employee = props =>{
     <th scope="col">{props.User.email}</th> 
     <th scope="col">{props.User.dob.age}</th> 
     <th scope="col">{props.User.cell}</th>
+    <th scope="col">{props.User.gender}</th>
     
     </tr>
     
