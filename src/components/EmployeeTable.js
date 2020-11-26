@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import user from "../lib/user.json";
+import user from "../library/user.json";
 import Card from "./Card.js";
 import "./style.css";
 
