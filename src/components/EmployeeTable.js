@@ -3,7 +3,8 @@ import user from "../library/user.json";
 import Card from "./Card.js";
 import "./style.css";
 
-//creating a table class that extends from the component, will also handle searches
+//creating a employee table class that extends from the component
+//this component will cover the searches also.
 export default class employeeTable extends Component {
   state = {
     original: [],
