@@ -1,6 +1,6 @@
 import React from "react";
 
-const Employee = props =>
+const Employee = props => {
     return(
     <tr>
     <th scope="col">{props.index +1}</th>  
