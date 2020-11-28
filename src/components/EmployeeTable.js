@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import user from "../library/user.json";
-import Card from "./card.js";
+import Card from "./Card.js";
 import "./style.css";
 
 //creating a employee table class that extends from the component
